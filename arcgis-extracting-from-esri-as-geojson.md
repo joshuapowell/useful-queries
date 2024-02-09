@@ -33,3 +33,8 @@ OBJECTID,SUB_PROJECT_ID,ROUTE_NUMBER,SEGMENT_NUMBER,ROUTE_CODE,ROUTE_NAME,SEGMEN
 After clicking the "Query GET" button you should be presented with a GeoJSON file.
 
 http://services.arcgis.com/0L95CJ0VTaxqcmED/ArcGIS/rest/services/TRANSPORTATION_bicycle_facilities/FeatureServer/0/query?where=1+%3D+1&objectIds=&time=&geometry=&geometryType=esriGeometryPolyline&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=OBJECTID%2CSUB_PROJECT_ID%2CROUTE_NUMBER%2CSEGMENT_NUMBER%2CROUTE_CODE%2CROUTE_NAME%2CSEGMENT_FROM%2CSEGMENT_TO%2CEXISTING_FACILITY%2CRECOMMENDED_FACILITY%2CCREATED_BY%2CCREATED_DATE%2CMODIFIED_BY%2CMODIFIED_DATE%2CSTREET_SEGMENT_ID%2CBICYCLE_FACILITIES_ID%2CBICYCLE_PLAN_ID%2CSYMBOL_LEVEL%2CLEVEL_OF_COMFORT&returnGeometry=true&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnDistinctValues=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=standard&f=pgeojson&token=
+
+## Troubleshooting
+In the example above, 1==1 is not a valid parameter and results in an error.
+
+You have to change it to 1 = 1.
